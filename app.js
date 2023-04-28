@@ -10,6 +10,9 @@ app.use(cors());
 //     res.send("this is starting app");
 // })
 app.use("/books",router)
+app.get('/',(req,res)=>{
+    res.send("Welcome to backend of bookstore")
+})
 
 
 mongoose.connect("mongodb+srv://guddukumar3652:raghavkumar@cluster0.93lqtvc.mongodb.net/?retryWrites=true&w=majority")
